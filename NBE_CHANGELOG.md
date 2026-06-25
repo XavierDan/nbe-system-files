@@ -44,7 +44,7 @@ DECISIONS LOCKED THIS SESSION
     context; no document requires a separate briefing
   - Session Close Protocol updated to include GitHub paste step
   - web_fetch limitation documented: Claude cannot cold-fetch URLs
-    autonomously; Dan must paste them at session open
+    autonomously; Dan must paste them at the session open
 
 - Session-open paste block locked as standard protocol:
   Dan pastes three raw GitHub URLs at the start of every new session.
@@ -72,12 +72,12 @@ DECISIONS LOCKED THIS SESSION
   Removed, Fixed, Security.
   One NBE-specific extension added: Decided — for binding locks that
   are not features or changes per se.
-  Implementation deferred until roadmap is complete.
+  Implementation deferred until the roadmap is complete.
   Status: backlogged, will not slip past roadmap publication.
 
 - Learning Curriculum located: confirmed as Section 5 of the NBE
   System Specification v0.2. Not a separate document. Weeks 1–2
-  are written; Weeks 3–6 are placeholders. Accounted for in roadmap.
+  are written; Weeks 3–6 are placeholders. Accounted for in the roadmap.
 
 OPEN ITEMS ADDED THIS SESSION
 
