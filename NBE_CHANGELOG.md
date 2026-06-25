@@ -16,12 +16,60 @@ UPDATE PROTOCOL
 - Confirmed updates: ambiguous items, decisions that may be revisited
 - Session-close protocol: end-of-session summary of CHANGELOG additions
 - NOT logged: iterative copy refinement, undecided discussion, exploratory
-  analogies that didn't lock, conversational exchanges
+  analogies that didn’t lock, conversational exchanges
 - CHANGELOG found dynamically at session open — search NBE root for most
   recent NBE_CHANGELOG* file. Never rely on a stored file ID.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NBE CHANGELOG ENTRY
+Session 10 · June 24, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DECISIONS LOCKED THIS SESSION
+
+- GitHub repo established as the new home for all NBE MD system files.
+  Repo: XavierDan/nbe-system-files (public)
+  CHANGELOG confirmed fetchable by Claude via raw URL.
+  Raw URL: https://raw.githubusercontent.com/XavierDan/nbe-system-files/main/NBE_CHANGELOG.md
+
+- Session-open protocol updated: Claude fetches CHANGELOG from GitHub
+  raw URL at session start. Drive dynamic search protocol retired for
+  CHANGELOG.
+
+- Filing method for large spec outputs confirmed: Dan saves to Google
+  Doc, provide a link for Claude to read back. Standing approach.
+
+- Master Specification Prompt v0.2 filed to Drive (NBE root).
+  File ID: 1rabN_1cEcvvTTKCwYv-XX2gMNv4caRK-uVMep5VrlUQ
+
+- CHANGELOG session numbering protocol locked: Claude reads current
+  CHANGELOG: before drafting any entry, confirm the correct session number.
+
+OPEN ITEMS ADDED THIS SESSION
+
+- Project instructions v1.5 needed — batch with formal NBE backlog
+  creation. Key updates: GitHub raw URL replaces Drive CHANGELOG
+  protocol; filing method confirmed; session numbering protocol added.
+
+PENDING (carried forward, highest priority first)
+1. PHP proxy deployment test (v0.5 gate — highest priority)
+2. Project instructions v1.5 + formal NBE backlog (batch together)
+3. Migrate remaining strong MD candidates to GitHub repo
+4. JSON schema validation against real API output
+5. Create NBE Learning Track subfolder in Drive
+6. Three-lane taxonomy implementation (v0.5)
+7. Card structure formal spec (v0.5)
+8. Print card structure formal spec (SpecDev)
+9. SM² logic documentation (v0.5)
+10. NBE identity direction decision (before v0.7)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF SESSION 10 CHANGELOG ENTRY · June 24, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 NBE CHANGELOG ENTRY
