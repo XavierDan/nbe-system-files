@@ -21,7 +21,131 @@ UPDATE PROTOCOL
   recent NBE_CHANGELOG* file. Never rely on a stored file ID.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NBE CHANGELOG ENTRY
+Session 12 · June 25, 2026 · 14:00 ET (approx.)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DECISIONS LOCKED THIS SESSION
+
+- Version number corrected: NBE is at v0.4 Alpha, not v0.2 Alpha.
+  Rationale: foundational architecture, brand system, scope, system
+  prompt, workspace files, and production calendar are all complete.
+  Remaining v0.5 work is validation and logic formalization, not
+  definition work.
+
+- Project Instructions updated to v1.5 (June 25, 2026). Key changes:
+  - Version corrected to v0.4 Alpha
+  - GitHub repo section added with raw URLs and fetch protocol
+  - Session-open paste block formalized
+  - Multi-LLM workflow documented (Gemini, Perplexity, same paste
+    discipline applies to all three platforms)
+  - Documentation philosophy embedded: every asset carries its own
+    context; no document requires a separate briefing
+  - Session Close Protocol updated to include GitHub paste step
+  - web_fetch limitation documented: Claude cannot cold-fetch URLs
+    autonomously; Dan must paste them at session open
+
+- Session-open paste block locked as standard protocol:
+  Dan pastes three raw GitHub URLs at the start of every new session.
+  Claude fetches all three immediately. One paste, Claude is current.
+  URLs:
+  CHANGELOG: https://raw.githubusercontent.com/XavierDan/nbe-system-files/main/NBE_CHANGELOG.md
+  SYSTEM SPEC: https://raw.githubusercontent.com/XavierDan/nbe-system-files/main/NBE_System_Specification.MD
+  ROADMAP: https://raw.githubusercontent.com/XavierDan/nbe-system-files/main/NBE_Roadmap.md
+
+- Multi-LLM update discipline locked: what goes to GitHub goes to
+  Gemini and Perplexity project contexts. Same manual paste, same
+  timing. One update action, three platforms current.
+
+- GitHub connector investigated and understood:
+  Connector is installed and provides read-only access only.
+  Claude cannot write to GitHub via any current connector.
+  Projects sync feature not exposed in Claude.ai Pro Project settings UI.
+  Write capability requires a GitHub MCP server — not yet available
+  in Claude's connector ecosystem.
+
+- CHANGELOG format standardization researched and backlogged:
+  Target standard: Keep a Changelog (keepachangelog.com/en/1.1.0/)
+  with full timestamps (YYYY-MM-DD HH:MM ET) per session entry.
+  Six standard change types adopted: Added, Changed, Deprecated,
+  Removed, Fixed, Security.
+  One NBE-specific extension added: Decided — for binding locks that
+  are not features or changes per se.
+  Implementation deferred until roadmap is complete.
+  Status: backlogged, will not slip past roadmap publication.
+
+- Learning Curriculum located: confirmed as Section 5 of the NBE
+  System Specification v0.2. Not a separate document. Weeks 1–2
+  are written; Weeks 3–6 are placeholders. Accounted for in roadmap.
+
+OPEN ITEMS ADDED THIS SESSION
+
+- Roadmap v1.0: tasks and dates from v0.4 Alpha through v1.0 launch.
+  First order of business in Session 13.
+
+- System Specification version number needs correcting from v0.2 to
+  v0.4 Alpha in the document header. Deferred.
+
+- Remaining MD candidates to migrate to GitHub repo: System
+  Specification, Roadmap (once built), Project Instructions.
+  Deferred to Session 13.
+
+PENDING (carried forward, highest priority first)
+1. Roadmap v1.0 — tasks and dates through launch (Session 13)
+2. CHANGELOG reformat to Keep a Changelog standard (post-roadmap)
+3. PHP proxy deployment test (v0.5 gate)
+4. SM² logic rules documentation (v0.5)
+5. Three-lane taxonomy implementation (v0.5)
+6. JSON schema validation against real API output (v0.5)
+7. System Specification version number correction (v0.4 Alpha)
+8. Migrate remaining MD candidates to GitHub repo
+9. NBE Learning Curriculum — complete Weeks 3–6 placeholders
+10. NBE identity direction decision (before v0.7)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF SESSION 12 CHANGELOG ENTRY · June 25, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NBE CHANGELOG ENTRY
+Session 11 · June 25, 2026 · 10:00 ET (approx.)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DECISIONS LOCKED THIS SESSION
+
+- GitHub connector connected mid-session via Claude.ai
+  Connections/Customization settings.
+
+- GitHub write capability confirmed unavailable: tools were not
+  active in Session 11 because the connector was connected after
+  the session opened. Resolution: open a new session after
+  connecting; GitHub tools should be live at that point.
+
+- Quote from Session 10 re: GitHub automation limitations confirmed
+  accurate — language was not fabricated.
+
+OPEN ITEMS ADDED THIS SESSION
+
+- Confirm GitHub write tools are active at the start of the next
+  session before any token or write work proceeds.
+
+PENDING (carried forward from Session 10, unchanged)
+1. PHP proxy deployment test (v0.5 gate — highest priority)
+2. Project Instructions v1.5 + formal NBE backlog (batch together)
+3. Migrate remaining MD candidates to GitHub repo
+4. JSON schema validation against real API output
+5. Create NBE Learning Track subfolder in Drive
+6. Three-lane taxonomy implementation (v0.5)
+7. Card structure formal spec (v0.5)
+8. Print card structure formal spec (SpecDev)
+9. SM² logic documentation (v0.5)
+10. NBE identity direction decision (before v0.7)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF SESSION 11 CHANGELOG ENTRY · June 25, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 NBE CHANGELOG ENTRY
