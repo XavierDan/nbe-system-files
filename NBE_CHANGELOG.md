@@ -21,6 +21,39 @@ UPDATE PROTOCOL
   recent NBE_CHANGELOG* file. Never rely on a stored file ID.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NBE CHANGELOG ENTRY
+Session 13 · June 25, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DECISIONS LOCKED THIS SESSION
+
+- NBE Roadmap v1.0 built and filed to GitHub.
+  Repo: XavierDan/nbe-system-files
+  Raw URL: https://raw.githubusercontent.com/XavierDan/nbe-system-files/main/NBE_Roadmap.md
+  Scope: forward-looking only — v0.4 Alpha (June 25, 2026) through
+  v1.0 launch (September 12, 2026).
+  Structure: deliverables-first, with phase labels and milestone dates
+  as supporting context. Six phases, 20 deliverables, 3 open questions.
+  Format: native Markdown with live checkboxes, tickable directly in
+  GitHub UI as deliverables are complete.
+
+- Roadmap organization principle locked: deliverables-first.
+  Phase labels and dates are supporting context, not the primary
+  organizing structure. This applies to all future roadmap iterations.
+
+- Native Markdown confirmed as the correct format for GitHub MD files
+  that will be used as working documents (checkboxes, heading navigation,
+  clean rendering). Plain text / box-drawing format reserved for
+  append-only logs such as the CHANGELOG.
+
+- Session-open fetch behavior documented: raw.githubusercontent.com
+  serves a cached version that may lag behind the GitHub UI by several
+  hours. The file is correct on GitHub; the fetch lag is a CDN issue,
+  not a repo problem. Fetching the blob URL
+  (github.com/XavierDan/.../blob/main/...) returns the current rendered
+  version and can be used to verify file state when the
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 NBE CHANGELOG ENTRY
 Session 12 · June 25, 2026 · 14:00 ET (approx.)
@@ -44,7 +77,7 @@ DECISIONS LOCKED THIS SESSION
     context; no document requires a separate briefing
   - Session Close Protocol updated to include GitHub paste step
   - web_fetch limitation documented: Claude cannot cold-fetch URLs
-    autonomously; Dan must paste them at the session open
+    autonomously; Dan must paste them at the session opening
 
 - Session-open paste block locked as standard protocol:
   Dan pastes three raw GitHub URLs at the start of every new session.
@@ -60,10 +93,10 @@ DECISIONS LOCKED THIS SESSION
 
 - GitHub connector investigated and understood:
   Connector is installed and provides read-only access only.
-  Claude cannot write to GitHub via any current connector.
-  Projects sync feature not exposed in Claude.ai Pro Project settings UI.
+  Claude cannot write to GitHub via any of the current connectors.
+  The project’s sync feature is not exposed in Claude. AI Pro Project settings UI.
   Write capability requires a GitHub MCP server — not yet available
-  in Claude's connector ecosystem.
+  in Claude’s connector ecosystem.
 
 - CHANGELOG format standardization researched and backlogged:
   Target standard: Keep a Changelog (keepachangelog.com/en/1.1.0/)
